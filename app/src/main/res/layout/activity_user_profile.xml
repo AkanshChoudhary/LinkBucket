@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF000000"
+    android:orientation="vertical"
+    tools:context=".UserProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/mainName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/colorMainYellow"
+                android:textSize="55sp" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/profile_card_background"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/colorMainYellow"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/profile_card_background"
+                android:drawableLeft="@drawable/ic_id"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/colorMainYellow"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/profile_card_background"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/colorMainYellow"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/resetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_restore"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:padding="10dp"
+                android:text="Reset Password"
+                android:textColor="@color/colorMainYellow"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/shareProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_share_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:padding="10dp"
+                android:text="Share Profile"
+                android:textColor="@color/colorMainYellow"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/logoutMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:padding="10dp"
+                android:text="Logout"
+                android:textColor="@color/colorMainYellow"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

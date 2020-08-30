@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/view"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        android:title="View links" />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        android:title="Add links to account"/>
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Delete"/>
+
+</menu>

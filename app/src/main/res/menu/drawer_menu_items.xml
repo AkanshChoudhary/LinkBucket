@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search_black"
+            android:title="Search" />
+        <item
+            android:id="@+id/newCard"
+            android:icon="@drawable/ic_add_box_black_24dp"
+            android:title="New Card" />
+
+        <item
+            android:id="@+id/myCollections"
+            android:icon="@drawable/ic_folder_shared_black_24dp"
+            android:title="My Collections" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Profile">
+            <menu>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout" />
+                <item
+                    android:id="@+id/seeProfile"
+                    android:icon="@drawable/ic_remove_red_eye_black_24dp"
+                    android:title="See profile" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Community">
+            <menu>
+                <item
+                    android:id="@+id/shareHistory"
+                    android:icon="@drawable/history"
+                    android:title="Share History" />
+            </menu>
+        </item>
+    </group>
+    <item
+        android:id="@+id/received"
+        android:icon="@drawable/ic_plane"
+        android:title="Received"
+        />
+</menu>

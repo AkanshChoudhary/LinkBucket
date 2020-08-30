@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Link Bucket</string>
+    <string-array name="share_choices">
+        <item>None</item>
+        <item>Code</item>
+        <item>App to App</item>
+    </string-array>
+    <string name="selectOne">Select the history type</string>
+</resources>

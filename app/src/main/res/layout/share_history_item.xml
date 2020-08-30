@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/toolbar_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@drawable/toolbar_background">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/toolbar_background"
+            android:src="@drawable/ic_plane"/>
+        <TextView
+            android:id="@+id/historyItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Studies Folder"
+            android:background="@drawable/toolbar_background"
+            android:gravity="center"
+            android:layout_toRightOf="@id/logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/historyItemInfo"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/toolbar_background"
+            android:backgroundTint="@android:color/white"
+            android:text="Code: MSkssar"
+            android:textIsSelectable="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            android:id="@+id/newTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_new" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
