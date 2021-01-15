@@ -17,8 +17,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10dp"
-           android:layout_marginTop="25dp"
-            android:text="Click the menu icon\nand then click on \nNew Card option. "
+            android:maxWidth="200dp"
+           android:layout_marginTop="55dp"
+            android:textSize="16sp"
+            android:text="Click the menu icon and then click on New Card option to save a new link. After saving you can long press the card to perform several actions on it"
             android:textColor="#171616" />
 
         <Button

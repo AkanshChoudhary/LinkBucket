@@ -20,6 +20,7 @@
               android:src="@drawable/ic_plane"
               android:layout_margin="5dp"/>
           <TextView
+              android:maxWidth="200dp"
               android:id="@+id/promptmessage"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
@@ -27,6 +28,7 @@
               android:padding="15dp"
               android:layout_marginTop="25dp"
               android:text=""
+              android:textSize="16sp"
               android:textColor="#171616" />
 
           <Button

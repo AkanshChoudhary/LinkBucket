@@ -122,7 +122,6 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorMainYellow"
                     android:focusable="true"
-                    android:focusedByDefault="false"
                     android:gravity="start"
                     android:hint="Search..."
                     android:padding="12dp"

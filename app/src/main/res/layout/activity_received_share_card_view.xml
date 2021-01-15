@@ -84,7 +84,6 @@
                     android:layout_weight="1"
                     android:background="@drawable/toolbar_background"
                     android:drawableStart="@drawable/search_black"
-                    android:focusedByDefault="false"
                     android:gravity="center"
                     android:padding="10dp" />
 

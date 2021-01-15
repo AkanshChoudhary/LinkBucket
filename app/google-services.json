@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:778133420450:android:a368f332c81baaffd69afb",
         "android_client_info": {
-          "package_name": "com.example.linkbucket"
+          "package_name": "com.linkbucket.linkbucket"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "778133420450-25sranrelhgbvl4hhula21tpi97i3up7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.linkbucket",
+            "package_name": "com.linkbucket.linkbucket",
             "certificate_hash": "5a8dcd1872cb1886347b84e730dfa941eec2a072"
           }
         },

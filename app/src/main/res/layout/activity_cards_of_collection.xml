@@ -124,7 +124,6 @@
                     android:hint="Search..."
                     android:layout_weight="1"
                     android:background="@drawable/toolbar_background"
-                    android:focusedByDefault="false"
                     android:gravity="start"
                     android:textColorHint="#DF000000"
                     android:padding="12dp" />

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.linkbucket">
+    package="com.linkbucket.linkbucket">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
+        android:screenOrientation="portrait"
         android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NavView">
-        <activity android:name=".ReceivedShareCardView"></activity>
-        <activity android:name=".ReceivedSharesActivity" />
-        <activity android:name=".ShareHistoryScreen" />
-        <activity android:name=".CardsOfCollection" />
-        <activity android:name=".CollectionActivity" />
-        <activity android:name=".UserProfile" />
-        <activity android:name=".MainUserDashboard" />
-        <activity android:name=".SignUpScreen" />
-        <activity android:name=".LoginScreen" />
-        <activity android:name=".LoginSignupScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.linkbucket.linkbucket.ReceivedShareCardView"></activity>
+        <activity android:name="com.linkbucket.linkbucket.ReceivedSharesActivity" />
+        <activity android:name="com.linkbucket.linkbucket.ShareHistoryScreen" />
+        <activity android:name="com.linkbucket.linkbucket.CardsOfCollection" />
+        <activity android:name="com.linkbucket.linkbucket.CollectionActivity" />
+        <activity android:name="com.linkbucket.linkbucket.UserProfile" />
+        <activity android:name="com.linkbucket.linkbucket.MainUserDashboard" />
+        <activity android:name="com.linkbucket.linkbucket.SignUpScreen" />
+        <activity android:name="com.linkbucket.linkbucket.LoginScreen" />
+        <activity android:name="com.linkbucket.linkbucket.LoginSignupScreen" />
+        <activity android:name="com.linkbucket.linkbucket.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
