@@ -10,8 +10,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -73,7 +71,6 @@ public class ShareHistoryScreen extends AppCompatActivity {
                         isLink2 = false;
                     }
                     toAppItems.add(new HistoryItem(document.getString("bunch_name"), document.getString("sent to"), isLink2));
-                    Toast.makeText(this, String.valueOf(isLink2), Toast.LENGTH_SHORT).show();
                 }
             });
         });

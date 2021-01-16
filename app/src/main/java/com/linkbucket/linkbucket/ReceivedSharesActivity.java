@@ -122,7 +122,7 @@ public class ReceivedSharesActivity extends AppCompatActivity {
                         dialog.dismiss();
                         FirebaseFirestore.getInstance().collection("user+" + FirebaseAuth.getInstance().getCurrentUser().getUid()).document("receivedShares").collection("AppToApp")
                                 .document(documentNames.get(position)).delete().addOnSuccessListener(aVoid -> {
-                            Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, "Deleted", Toast.LENGTH_SHORT).show();
                             receivedList.remove(position);
                             historyRecyclerAdapter.notifyItemRemoved(position);
                         });

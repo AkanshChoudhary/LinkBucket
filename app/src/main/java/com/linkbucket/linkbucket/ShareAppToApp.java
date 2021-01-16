@@ -49,7 +49,7 @@ public class ShareAppToApp {
             FirebaseFirestore.getInstance().collection("user+" + FirebaseAuth.getInstance().getCurrentUser().getUid()).document("pastShares")
                     .collection("toApp").document().set(saveHistoryMap)
                     .addOnSuccessListener(aVoid1 -> {
-                        Toast.makeText(context, "All done", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Done", Toast.LENGTH_SHORT).show();
                     });
         });
     }

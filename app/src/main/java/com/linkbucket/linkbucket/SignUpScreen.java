@@ -1,10 +1,10 @@
 package com.linkbucket.linkbucket;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -27,13 +27,14 @@ public class SignUpScreen extends AppCompatActivity {
     AlertDialog.Builder dialog;
     AlertDialog alertDialog;
     static String userName;
+    TextView switchToLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_screen);
         firebaseAuth = FirebaseAuth.getInstance();
+        switchToLogin = findViewById(R.id.switchToSign);
         firebaseFirestore = FirebaseFirestore.getInstance();
         View v1 = getLayoutInflater().inflate(R.layout.loading_dialog, null);
         lottieAnimationView = v1.findViewById(R.id.loadinglottie);
@@ -41,6 +42,10 @@ public class SignUpScreen extends AppCompatActivity {
         dialog.setView(v1);
         alertDialog = dialog.create();
         alertDialog.setCanceledOnTouchOutside(false);
+        switchToLogin.setOnClickListener(view -> {
+            finish();
+            startActivity(new Intent(getApplicationContext(),LoginScreen.class));
+        });
         findViewById(R.id.signUpButton).setOnClickListener(v -> {
             alertDialog.show();
             lottieAnimationView.playAnimation();
@@ -57,7 +62,7 @@ public class SignUpScreen extends AppCompatActivity {
                 String pass=password.getText().toString();
                 createUser(user,pass);
             } else {
-                Toast.makeText(SignUpScreen.this, "no", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignUpScreen.this, "Please enter same password in both fields.", Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -375,10 +375,8 @@ public class CollectionActivity extends AppCompatActivity {
         }
         if (folderItemList.get(pos).getState()) {
             selectedFolderNames.add(folderName);
-            Toast.makeText(this, "Selected Card At Position" + pos, Toast.LENGTH_SHORT).show();
         } else {
             selectedFolderNames.remove(folderName);
-            Toast.makeText(this, "Deselected Card At Position" + pos, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -429,7 +427,7 @@ public class CollectionActivity extends AppCompatActivity {
             FirebaseFirestore.getInstance().collection("user+" + FirebaseAuth.getInstance().getCurrentUser().getUid()).document("pastShares")
                     .collection("toApp").document().set(saveHistoryMap)
                     .addOnSuccessListener(aVoid1 -> {
-                        Toast.makeText(this, "All done", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show();
                         deselectAll();
                         showMainToolbar();
                     });

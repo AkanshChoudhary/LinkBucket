@@ -64,7 +64,10 @@ public class UserProfile extends AppCompatActivity {
         resetPass.setOnClickListener(v -> changeDetail(ChangeItem.password));
         findViewById(R.id.logoutMain).setOnClickListener(v -> {
             firebaseAuth.signOut();
-            startActivity(new Intent(getApplicationContext(), LoginSignupScreen.class));
+            Intent intent = new Intent(getApplicationContext(), LoginSignupScreen.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         });
         share.setOnClickListener(v->{
             Intent sendIntent = new Intent(Intent.ACTION_SEND);

@@ -648,10 +648,8 @@ public class MainUserDashboard extends AppCompatActivity {
         }
         if (itemList.get(position).getSelected()) {
             selectedCardNames.add("card " + itemList.get(position).getCardNumber());
-            Toast.makeText(this, "Selected Card At Position" + position, Toast.LENGTH_SHORT).show();
         } else {
             selectedCardNames.remove("card " + itemList.get(position).getCardNumber());
-            Toast.makeText(this, "Deselected Card At Position" + position, Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -833,7 +831,7 @@ public class MainUserDashboard extends AppCompatActivity {
             FirebaseFirestore.getInstance().collection("user+" + FirebaseAuth.getInstance().getCurrentUser().getUid()).document("pastShares")
                     .collection("toApp").document().set(saveHistoryMap)
                     .addOnSuccessListener(aVoid1 -> {
-                        Toast.makeText(this, "All done", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show();
                         deselectAll();
                         showMainToolbar();
                     });

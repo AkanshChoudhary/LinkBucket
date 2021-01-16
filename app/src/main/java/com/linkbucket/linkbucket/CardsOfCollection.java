@@ -13,8 +13,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
@@ -367,10 +365,8 @@ public class CardsOfCollection extends AppCompatActivity {
         }
         if (collectionCardList.get(position).getSelected()) {
             selectedCardNames.add("card " + collectionCardList.get(position).getCardNumber());
-            Toast.makeText(this, "Selected Card At Position" + position, Toast.LENGTH_SHORT).show();
         } else {
             selectedCardNames.remove("card " + collectionCardList.get(position).getCardNumber());
-            Toast.makeText(this, "Deselected Card At Position" + position, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -444,7 +440,6 @@ public class CardsOfCollection extends AppCompatActivity {
             FirebaseFirestore.getInstance().collection("user+" + FirebaseAuth.getInstance().getCurrentUser().getUid()).document("pastShares")
                     .collection("toApp").document().set(saveHistoryMap)
                     .addOnSuccessListener(aVoid1 -> {
-                        Toast.makeText(this, "All done", Toast.LENGTH_SHORT).show();
                         deselectAll();
                         showMainToolbar();
                     });
